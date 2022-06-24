@@ -19,8 +19,14 @@ resource "aws_instance" "web1" {
   provisioner "file" {
     source = "/Users/ranjitswain/Downloads/pswain.pem"
     destination = "/home/ec2-user/pswain.pem"
+  
+    connection {
+      type = "ssh"
+      host = self.public_ip
+      user = "ec2-user"
+      private_key = "${file("./pswain.pem")}"
+    }  
   }
-
 }
 /*
 resource "aws_instance" "web2" {
