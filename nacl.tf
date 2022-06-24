@@ -49,6 +49,15 @@ resource "aws_network_acl" "main" {
     from_port  = 443
     to_port    = 443
   }
+  egress {  //Ephemeral Port
+    protocol   = "tcp"
+    rule_no    = 300
+    action     = "allow"
+    cidr_block = "0.0.0.0/0"
+    from_port  = 1024
+    to_port    = 65535
+  }
+
   tags = {
     Name = "main"
   }
@@ -58,4 +67,5 @@ resource "aws_network_acl_association" "main" {
   network_acl_id = aws_network_acl.main.id
   subnet_id      = aws_subnet.public.id
 }
+
 */
