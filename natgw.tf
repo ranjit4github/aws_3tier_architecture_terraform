@@ -4,7 +4,7 @@
 # GitHub    : https://github.com/ranjit4github
 ########################################################
 
-resource "aws_nat_gateway" "example" {
+resource "aws_nat_gateway" "natgw" {
   allocation_id = aws_eip.myeip.id
   subnet_id     = aws_subnet.public.id
 
