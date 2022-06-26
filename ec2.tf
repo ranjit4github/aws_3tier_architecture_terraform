@@ -4,13 +4,14 @@
 # GitHub    : https://github.com/ranjit4github
 ########################################################
 
-resource "aws_instance" "web1" {
+resource "aws_instance" "web" {
   ami           = "ami-08df646e18b182346"
   instance_type = "t2.micro"
   key_name = "pswain"
-  subnet_id = aws_subnet.public.id
+  subnet_id = aws_subnet.public[count.index].id
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   associate_public_ip_address = true
+  count = 2
 
   tags = {
     Name = "WebServer1"
@@ -33,7 +34,7 @@ resource "aws_instance" "web2" {
   ami           = "ami-08df646e18b182346"
   instance_type = "t2.micro"
   key_name = "pswain"
-  subnet_id = aws_subnet.public2.id
+  subnet_id = aws_subnet.public[count.index].id
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   associate_public_ip_address = true
   
