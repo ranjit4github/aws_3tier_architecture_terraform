@@ -1,2 +1,2 @@
-# vpc_3tier_architecture_terraform
-VPC 3tier Architecture using Terraform
+# AWS_3tier_architecture_terraform
+AWS 3tier Architecture using Terraform
