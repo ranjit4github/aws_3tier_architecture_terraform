@@ -29,20 +29,7 @@ resource "aws_instance" "web" {
     }  
   }
 }
-/*
-resource "aws_instance" "web2" {
-  ami           = "ami-08df646e18b182346"
-  instance_type = "t2.micro"
-  key_name = "pswain"
-  subnet_id = aws_subnet.public[count.index].id
-  vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  associate_public_ip_address = true
-  
-  tags = {
-    Name = "WebServer2"
-  }
-}
-*/
+
 resource "aws_instance" "db" {
   ami           = "ami-08df646e18b182346"
   instance_type = "t2.micro"
