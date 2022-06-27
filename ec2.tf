@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
   count = 2
 
   tags = {
-    Name = "WebServer1"
+    Name = "WebServer"
   }
 
   provisioner "file" {
