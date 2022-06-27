@@ -42,13 +42,7 @@ resource "aws_lb_target_group_attachment" "front_end" {
   port             = 80
   count = 2
 }
-/*
-resource "aws_lb_target_group_attachment" "front_end2" {
-  target_group_arn = aws_lb_target_group.albtg.arn
-  target_id        = aws_instance.web2.id
-  port             = 80
-}
-*/
+
 //Listener
 resource "aws_lb_listener" "albl" {
   load_balancer_arn = aws_lb.alb.arn
