@@ -4,6 +4,15 @@
 # GitHub    : https://github.com/ranjit4github
 ########################################################
 
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.20.1"
+    }
+  }
+}
+
 provider "aws" {
   region = "ap-south-1"
 }
