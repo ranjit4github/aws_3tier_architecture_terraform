@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   }
 
   provisioner "file" {
-    source = "/Users/ranjitswain/Downloads/pswain.pem"
+    source = "./pswain.pem"
     destination = "/home/ec2-user/pswain.pem"
   
     connection {
