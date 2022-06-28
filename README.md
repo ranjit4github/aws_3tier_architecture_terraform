@@ -23,6 +23,6 @@ Application Load Balancer
 Apache Webserver
 MySQL DB
 
-![Screenshot 2022-06-28 at 7 59 43 AM](https://user-images.githubusercontent.com/58227542/176078718-bf07525d-96ab-495b-a9fd-7b857a91d3bb.png)
+![Screenshot 2022-06-28 at 9 44 37 AM](https://user-images.githubusercontent.com/58227542/176114794-94145c12-982d-4fab-9b14-64f9c0faf6ac.png)
 
 ![Screenshot 2022-06-28 at 7 57 51 AM](https://user-images.githubusercontent.com/58227542/176078468-3847bab0-e70e-4360-b077-181315ee007c.png)
