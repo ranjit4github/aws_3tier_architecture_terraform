@@ -8,6 +8,7 @@ It is a viable choice for software projects to be started quickly.
 aws_3tier_architecture_terraform
 
 Video Tutorial:
+
 Part1 - https://youtu.be/B3BtmyBetQo
 
 Part2 - https://youtu.be/kpoUeBkHoSc
