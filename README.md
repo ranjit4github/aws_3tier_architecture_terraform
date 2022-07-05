@@ -16,17 +16,29 @@ Part2 - https://youtu.be/kpoUeBkHoSc
 Part3 - https://youtu.be/Nz6pKARM5W0
 
 Resources need to be created / installed
+
 Custom VPC
+
 2 Subnets (Public)
+
 1 Subnet (Private)
+
 2 EC2 Instances
+
 Security Group
+
 Elastic IP
+
 NAT Gateway
+
 Internet Gateway
+
 Route Table
+
 Application Load Balancer
+
 Apache Webserver
+
 MySQL DB
 
 ![Screenshot 2022-06-28 at 9 44 37 AM](https://user-images.githubusercontent.com/58227542/176114794-94145c12-982d-4fab-9b14-64f9c0faf6ac.png)
